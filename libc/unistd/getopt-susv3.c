@@ -93,7 +93,7 @@ int getopt(int argc, char * const argv[], const char *optstring)
 #ifdef __BCC__
 					fprintf(stderr, "%s: %s -- %c\n", argv[0], s, *o);
 #else
-					fprintf(stderr, _(s), argv[0], *o);
+					fprintf(stderr, s, argv[0], *o);
 #endif
 				}
 			}
